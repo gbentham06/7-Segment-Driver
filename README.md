@@ -10,31 +10,31 @@ This includes the construction of the driver itself and numbers 0-9
 ## Segment divisions and logical K-maps
 First of all, we need to figure out the logic of each segmentv of the display, this is done by using a 4 input K-map for each number
 ### A
-![image](https://github.com/gbentham06/7-Segment-Driver/assets/169713724/0afbb6eb-627f-4f4a-9413-a841f0a78751)
+![image](https://github.com/gbentham06/7-Segment-Driver/assets/169713724/0afbb6eb-627f-4f4a-9413-a841f0a78751)<br/>
 This solves and simplifies to A = b'd' + a'c + bd + ac'
 
 ### B
-![image](https://github.com/gbentham06/7-Segment-Driver/assets/169713724/0c7bc262-aa0b-4fc5-bdc5-78422bf8f457)
+![image](https://github.com/gbentham06/7-Segment-Driver/assets/169713724/0c7bc262-aa0b-4fc5-bdc5-78422bf8f457)<br/>
 This solves and simplifies to B = b' + c'd' + ac' + ad' + a'cd
 
 ### C
-![image](https://github.com/gbentham06/7-Segment-Driver/assets/169713724/dd876016-753e-45e5-9f84-a95a337a066b)
+![image](https://github.com/gbentham06/7-Segment-Driver/assets/169713724/dd876016-753e-45e5-9f84-a95a337a066b)<br/>
 This solves and simplifies to C = d + a'c' + bc + ab'
 
 ### D
-![image](https://github.com/gbentham06/7-Segment-Driver/assets/169713724/84e7d995-de0b-4f98-a637-e259e0b29f43)
+![image](https://github.com/gbentham06/7-Segment-Driver/assets/169713724/84e7d995-de0b-4f98-a637-e259e0b29f43)<br/>
 This solves and simplifies to D = b'd' + ac' + a'b'c + a'cd' + bc'd + abd
 
 ### E
-![image](https://github.com/gbentham06/7-Segment-Driver/assets/169713724/b7c51c1d-6e0f-46f6-a4cf-539d717519de)
+![image](https://github.com/gbentham06/7-Segment-Driver/assets/169713724/b7c51c1d-6e0f-46f6-a4cf-539d717519de)<br/>
 This solves and simplifies to E = b'd' + a'cd' + ac'd'
 
 ### F
-![image](https://github.com/gbentham06/7-Segment-Driver/assets/169713724/0672f8c7-2a28-46cd-a0a3-149c1424b123)
+![image](https://github.com/gbentham06/7-Segment-Driver/assets/169713724/0672f8c7-2a28-46cd-a0a3-149c1424b123)<br/>
 This solves and simplifies to F = a'c'd' + a'bc' + a'bd' + ab'c' + ab'd' + abc
 
 ### G
-![image](https://github.com/gbentham06/7-Segment-Driver/assets/169713724/d26e474e-196f-47b7-ba9f-51266a2ad722)
+![image](https://github.com/gbentham06/7-Segment-Driver/assets/169713724/d26e474e-196f-47b7-ba9f-51266a2ad722)<br/>
 This solves and simplifies to G = bc' + bd' + ac' +ab + a'b'c
 
 ## Appling this logic into the circuits
@@ -60,3 +60,8 @@ application of this is fairly easy if you structure it using 8 master wires (a,a
 
 ### G
 ![image](https://github.com/gbentham06/7-Segment-Driver/assets/169713724/9f029ae1-7a2d-485f-b89b-4917013aafe7)
+
+## Complete driver
+Now we just connect all 4 inputs to all 7 segments using 4 master wires<br/>
+![image](https://github.com/gbentham06/7-Segment-Driver/assets/169713724/eb1b3e98-fe5f-4d65-9864-7876b17d00a8)
+
